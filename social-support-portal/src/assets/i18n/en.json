@@ -1,0 +1,40 @@
+{
+ "TITLE": "Social Support Application",
+ "NEXT": "Next",
+ "BACK": "Back",
+ "SUBMIT": "Submit",
+
+ "PERSONAL_INFO": "Personal Information",
+ "FAMILY_INFO": "Family & Financial Information",
+ "SITUATION_INFO": "Situation Description",
+
+ "NAME": "Name",
+ "NATIONAL_ID": "National ID",
+ "DATE_OF_BIRTH": "Date of Birth",
+ "GENDER": "Gender",
+ "ADDRESS": "Address",
+ "CITY": "City",
+ "STATE": "State",
+ "COUNTRY": "Country",
+ "PHONE": "Phone",
+ "EMAIL": "Email",
+
+ "MARITAL_STATUS": "Marital Status",
+ "DEPENDENTS": "Dependents",
+ "EMPLOYMENT_STATUS": "Employment Status",
+ "MONTHLY_INCOME": "Monthly Income",
+ "HOUSING_STATUS": "Housing Status",
+
+ "FINANCIAL_SITUATION": "Financial Situation",
+ "EMPLOYMENT_CIRCUMSTANCES": "Employment Circumstances",
+ "REASON": "Reason for Applying",
+
+ "HELP_ME_WRITE": "Help Me Write",
+ "REQUIRED": "Required",
+ "INVALID": "Invalid",
+ "SELECT": "Select",
+ "SINGLE": "Single",
+ "MARRIED": "Married",
+ "DIVORCED": "Divorced",
+ "WIDOWED": "Widowed"
+}

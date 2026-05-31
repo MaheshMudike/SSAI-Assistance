@@ -1,0 +1,35 @@
+<div class="form-grid" [formGroup]="form">
+
+    <h2>{{ 'SITUATION_INFO' | translate }}</h2>
+
+    <!-- Financial Situation -->
+    <div class="field">
+        <label>{{ 'FINANCIAL_SITUATION' | translate }}</label>
+        <textarea formControlName="financialSituation"></textarea>
+
+        <button mat-raised-button color="primary" (click)="generate('financialSituation')">
+            {{ 'HELP_ME_WRITE' | translate }}
+        </button>
+    </div>
+
+    <!-- Employment Circumstances -->
+    <div class="field">
+        <label>{{ 'EMPLOYMENT_CIRCUMSTANCES' | translate }}</label>
+        <textarea formControlName="employmentCircumstances"></textarea>
+
+        <button mat-raised-button color="primary" (click)="generate('employmentCircumstances')">
+            {{ 'HELP_ME_WRITE' | translate }}
+        </button>
+    </div>
+
+    <!-- Reason -->
+    <div class="field">
+        <label>{{ 'REASON' | translate }}</label>
+        <textarea formControlName="reasonForApplying"></textarea>
+
+        <button mat-raised-button color="primary" (click)="generate('reasonForApplying')">
+            {{ 'HELP_ME_WRITE' | translate }}
+        </button>
+    </div>
+
+</div>

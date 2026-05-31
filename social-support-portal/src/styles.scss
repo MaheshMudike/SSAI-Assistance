@@ -1,0 +1,155 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* You can add global styles to this file, and also import other style files */
+/* PAGE CENTERING */
+
+
+/* PAGE CENTER */
+.page-wrapper {
+ display: flex;
+ justify-content: center;
+ padding: 20px;
+}
+
+/* MATERIAL CARD FIX */
+mat-card.form-card {
+ width: 100%;
+ max-width: 750px;
+ padding: 20px;
+ border-radius: 12px;
+}
+
+/* FORM LAYOUT */
+.form-grid {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}
+
+/* FIELD BLOCK */
+.field {
+ display: flex;
+ flex-direction: column;
+ gap: 8px;
+}
+
+/* LABEL */
+label {
+ font-weight: 600;
+}
+
+/* INPUTS */
+input, select, textarea {
+ padding: 10px;
+ border: 1px solid hashtag#ccc;
+ border-radius: 6px;
+ font-size: 14px;
+}
+
+/* TEXTAREA HEIGHT */
+textarea {
+ padding: 10px;
+ font-size: 14px;
+  min-height: 220px !important;
+ resize: vertical;
+ line-height: 1.6;
+}
+
+/* BUTTON SPACING */
+button {
+ width: fit-content;
+}
+
+/* BUTTON ROW */
+.button-row {
+ display: flex;
+ justify-content: flex-end;
+ gap: 12px;
+ margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+ mat-card.form-card {
+ padding: 15px;
+ }
+
+ .button-row {
+ flex-direction: column;
+ gap: 10px;
+ }
+}
+
+.btn-row {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 15px;
+}
+
+
+/* AI DIALOG */
+
+.ai-dialog-container {
+ width: 100%;
+}
+
+.ai-card {
+ width: 100%;
+ padding: 20px;
+ border-radius: 16px;
+}
+
+.dialog-header {
+ margin-bottom: 16px;
+}
+
+.dialog-header h2 {
+ margin: 0;
+ font-size: 22px;
+}
+
+.dialog-header p {
+ color: #666;
+ margin-top: 6px;
+}
+
+.full-width {
+ width: 100%;
+}
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+ .ai-card {
+ padding: 16px;
+ }
+
+ .button-row {
+ flex-direction: column;
+ }
+
+ .button-row button {
+ width: 100%;
+ }
+
+ textarea {
+ min-height: 180px !important;
+ }
+}
+
+small {
+ color: red;
+ font-size: 12px;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+
+ border: 1px solid red;
+}

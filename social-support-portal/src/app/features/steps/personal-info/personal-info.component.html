@@ -1,0 +1,69 @@
+<div class="form-grid" [formGroup]="form">
+
+    <h2>{{ 'PERSONAL_INFO' | translate }}</h2>
+
+    <div class="field">
+        <label>{{ 'NAME' | translate }}</label>
+        <input formControlName="name">
+        <small *ngIf="form.get('name')?.hasError('required') && form.get('name')?.touched">{{ 'NAME' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'NATIONAL_ID' | translate }}</label>
+        <input formControlName="nationalId">
+        <small *ngIf="form.get('nationalId')?.hasError('required') && form.get('nationalId')?.touched">{{ 'NATIONAL_ID' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'DATE_OF_BIRTH' | translate }}</label>
+        <input type="date" formControlName="dob">
+        <small *ngIf="form.get('dob')?.hasError('required') && form.get('dob')?.touched">{{ 'DATE_OF_BIRTH' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'GENDER' | translate }}</label>
+        <select formControlName="gender">
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label>{{ 'ADDRESS' | translate }}</label>
+        <input formControlName="address">
+    </div>
+
+    <div class="field">
+        <label>{{ 'CITY' | translate }}</label>
+        <input formControlName="city">
+        <small *ngIf="form.get('city')?.hasError('required') && form.get('city')?.touched">{{ 'CITY' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'STATE' | translate }}</label>
+        <input formControlName="state">
+        <small *ngIf="form.get('state')?.hasError('required') && form.get('state')?.touched">{{ 'STATE' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'COUNTRY' | translate }}</label>
+        <input formControlName="country">
+        <small *ngIf="form.get('country')?.hasError('required') && form.get('country')?.touched">{{ 'COUNTRY' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'PHONE' | translate }}</label>
+        <input formControlName="phone">
+        <small *ngIf="form.get('phone')?.hasError('required') && form.get('phone')?.touched">{{ 'PHONE' | translate }} {{ 'REQUIRED' | translate }}</small>
+        <small *ngIf="form.get('phone')?.hasError('pattern') && form.get('phone')?.touched">{{ 'PHONE' | translate }} {{ 'INVALID' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'EMAIL' | translate }}</label>
+        <input formControlName="email">
+        <small *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">{{ 'EMAIL' | translate }} {{ 'REQUIRED' | translate }}</small>
+        <small *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched">{{ 'EMAIL' | translate }} {{ 'INVALID' | translate }}</small>
+    </div>
+
+</div>

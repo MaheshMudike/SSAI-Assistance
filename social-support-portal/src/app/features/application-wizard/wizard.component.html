@@ -1,0 +1,40 @@
+<div class="page-wrapper">
+
+    <app-progress-bar [progress]="step * 33">
+    </app-progress-bar>
+
+    <mat-card class="form-card">
+
+        <!-- STEP COMPONENTS -->
+        <app-personal-info *ngIf="step === 1" [form]="form">
+        </app-personal-info>
+
+        <app-family-info *ngIf="step === 2" [form]="form">
+        </app-family-info>
+
+        <app-situation-info *ngIf="step === 3" [form]="form">
+        </app-situation-info>
+
+        <!-- BUTTONS -->
+        <div class="button-row">
+
+            <button mat-button (click)="back()" [disabled]="step === 1">
+
+                Back
+            </button>
+
+            <button mat-raised-button color="primary" *ngIf="step < 3" (click)="next()">
+
+                Next
+            </button>
+
+            <button mat-raised-button color="primary" *ngIf="step === 3" (click)="submit()">
+
+                Submit
+            </button>
+
+        </div>
+
+    </mat-card>
+
+</div>

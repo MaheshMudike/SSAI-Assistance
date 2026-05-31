@@ -1,0 +1,40 @@
+{
+ "TITLE": "منصة الدعم الاجتماعي",
+ "NEXT": "التالي",
+ "BACK": "رجوع",
+ "SUBMIT": "إرسال",
+
+ "PERSONAL_INFO": "المعلومات الشخصية",
+ "FAMILY_INFO": "المعلومات العائلية والمالية",
+ "SITUATION_INFO": "وصف الحالة",
+
+ "NAME": "الاسم",
+ "NATIONAL_ID": "الهوية الوطنية",
+ "DATE_OF_BIRTH": "تاريخ الميلاد",
+ "GENDER": "الجنس",
+ "ADDRESS": "العنوان",
+ "CITY": "المدينة",
+ "STATE": "المنطقة",
+ "COUNTRY": "الدولة",
+ "PHONE": "رقم الهاتف",
+ "EMAIL": "البريد الإلكتروني",
+
+ "MARITAL_STATUS": "الحالة الاجتماعية",
+ "DEPENDENTS": "المعالين",
+ "EMPLOYMENT_STATUS": "حالة العمل",
+ "MONTHLY_INCOME": "الدخل الشهري",
+ "HOUSING_STATUS": "حالة السكن",
+
+ "FINANCIAL_SITUATION": "الوضع المالي",
+ "EMPLOYMENT_CIRCUMSTANCES": "ظروف العمل",
+ "REASON": "سبب التقديم",
+
+ "HELP_ME_WRITE": "ساعدني في الكتابة",
+ "REQUIRED": "مطلوب",
+ "INVALID": "غير صالح",
+ "SELECT": "اختر",
+ "SINGLE": "أعزب",
+ "MARRIED": "متزوج",
+ "DIVORCED": "مطلق",
+ "WIDOWED": "أرمل"
+}

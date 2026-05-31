@@ -1,0 +1,40 @@
+<div class="form-grid" [formGroup]="form">
+
+    <h2>{{ 'FAMILY_INFO' | translate }}</h2>
+
+    <div class="field">
+        <label>{{ 'MARITAL_STATUS' | translate }}</label>
+        <select formControlName="maritalStatus">
+            <option value="">{{ 'SELECT' | translate }}</option>
+            <option>{{ 'SINGLE' | translate }}</option>
+            <option>{{ 'MARRIED' | translate }}</option>
+            <option>{{ 'DIVORCED' | translate }}</option>
+            <option>{{ 'WIDOWED' | translate }}</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label>{{ 'DEPENDENTS' | translate }}</label>
+        <input type="number" formControlName="dependents">
+        <small *ngIf="form.get('dependents')?.hasError('required') && form.get('dependents')?.touched">{{ 'DEPENDENTS' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'EMPLOYMENT_STATUS' | translate }}</label>
+        <input formControlName="employmentStatus">
+        <small *ngIf="form.get('employmentStatus')?.hasError('required') && form.get('employmentStatus')?.touched">{{ 'EMPLOYMENT_STATUS' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'MONTHLY_INCOME' | translate }}</label>
+        <input type="number" formControlName="monthlyIncome">
+        <small *ngIf="form.get('monthlyIncome')?.hasError('required') && form.get('monthlyIncome')?.touched">{{ 'MONTHLY_INCOME' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+    <div class="field">
+        <label>{{ 'HOUSING_STATUS' | translate }}</label>
+        <input formControlName="housingStatus">
+        <small *ngIf="form.get('housingStatus')?.hasError('required') && form.get('housingStatus')?.touched">{{ 'HOUSING_STATUS' | translate }} {{ 'REQUIRED' | translate }}</small>
+    </div>
+
+</div>
