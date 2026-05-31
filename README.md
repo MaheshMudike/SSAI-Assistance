@@ -45,7 +45,7 @@ Frontend
 
 1. Clone Repository
 
-git clone <your-github-url>
+git clone https://github.com/MaheshMudike/SSAI-Assistance.git
 
 2. Install Dependencies
 
